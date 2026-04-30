@@ -22,7 +22,7 @@ jobs:
           pyinstaller --onefile generate_token.py
       
       - name: Upload EXE
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generate_token
           path: dist/generate_token.exe
